@@ -1,0 +1,24 @@
+GitHub is a class for retriving informations about commits and issues
+of GitHub lists of reposiories.
+It is initialized with the GitHub(String url, GregorianCalendar date)
+constructor wich takes the HTTPS url of list of repositories and the date
+since you want to fetch issues or commits.
+To fetch informations about commits and issues use getCommits() and getIssues()
+respectively which take no parameter.
+GitHub class also exports getLimits(), setUrl(String url) and
+setDate(GregorianCalendar date) methods which are used to obtain
+rate limits of API root endpoint and to change url
+and date set during creation of the object.
+
+It is written for Java machines for Unix like operating systems and
+has been tested with a set of popular GitHub list of repositories:
+https://api.github.com/orgs/octokit/repos
+https://api.github.com/users/deniscp/repos
+https://api.github.com/orgs/Qihoo360/repos
+https://api.github.com/users/h2non/repos
+https://api.github.com/orgs/flarum/repos
+https://api.github.com/users/fouber/repos
+https://api.github.com/orgs/lfit/repos
+https://api.github.com/user/michaeldfallen/repos
+https://api.github.com/orgs/getlantern/repos
+https://api.github.com/orgs/mit-nlp/repos
